@@ -3,44 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="container">
-        <div id="display">0</div>
-        <div class="buttons">
+        <input id="display" readonly>
+        <div id="buttons">
             <div class="btnRow">
-                <button>AC</button>
-                <button>+/-</button>
-                <button>%</button>
-                <button>÷</button>
+                <button id="ACbtn" onclick="toDisplay('AC')">AC</button>
+                <button onclick="toDisplay('+/-')">+/-</button>
+                <button onclick="toDisplay('%')">%</button>
+                <button onclick="toDisplay('÷')">÷</button>
             </div>
             <div class="btnRow">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>x</button>
+                <button onclick="toDisplay('7')">7</button>
+                <button onclick="toDisplay('8')">8</button>
+                <button onclick="toDisplay('9')">9</button>
+                <button onclick="toDisplay('x')">x</button>
             </div>
             <div class="btnRow">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
+                <button onclick="toDisplay('4')">4</button>
+                <button onclick="toDisplay('5')">5</button>
+                <button onclick="toDisplay('6')">6</button>
+                <button onclick="toDisplay('-')">-</button>
             </div>
             <div class="btnRow">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
+                <button onclick="toDisplay('1')">1</button>
+                <button onclick="toDisplay('2')">2</button>
+                <button onclick="toDisplay('3')">3</button>
+                <button onclick="toDisplay('+')">+</button>
             </div>
             <div class="btnRow">
-                <button>0</button>
-                <button>.</button>
-                <button>=</button>
+                <button onclick="toDisplay('0')">0</button>
+                <button onclick="toDisplay('.')">.</button>
+                <button onclick="toDisplay('=')">=</button>
             </div>
-        </div>
+        </div> 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
