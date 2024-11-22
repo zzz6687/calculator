@@ -1,3 +1,79 @@
-.container {
+body {
+/*Display*/
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+/*Box model*/
+    background-color: #211522;
+}
+
+#container {
+/*Box model*/
+    border: 1px solid grey;
+}
+
+#title {
+/*Box model*/
+    margin-bottom: 20px;
+/*Typography*/
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 50px;
+    color: #FBF7FF;
+}
+
+#display {
+    /*Box model*/
+        width: 366.5px;
+        height: 70px;
+        padding: 15px;
+        background-color: #231942;
+    /*Typography*/
+        font-family: "Chakra Petch", sans-serif;
+        font-size: 50px;
+        font-weight: 100;
+        text-align: right;
+        color: #FBF7FF;
+    }
+    
+#buttons {
+/*Box model stuff*/
+    width: 400px;
+}
+
+.btnRow {
+/*Display*/
+    display: flex;
+    justify-content: space-between;
+/*Miscellaneous*/
+    gap: 0;
+}
+
+button {
+/*Display*/
+    flex-grow: 1;
+/*Box model*/
+    width: 97px;
+    height: 70px;
+    margin: 0;
+    border: none;
+    border: 0.5px solid grey;
+    background-color: #5a189a;
+/*Typography*/
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+    color: #FBF7FF;;
+}
+
+.color1 {
+    background-color: #9F86C0;
+}
+
+.color2 {
+    background-color: #5E548E;
+    font-size: 30px;
+}
+
+#zeroBtn {
+    width: 197px;
 }
