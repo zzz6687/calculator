@@ -29,7 +29,7 @@ function toDisplay(value) {
     else if (value === "+") {
         operator = "+";
         num1 = Number(currentInput);
-        waitForNum2 = true;;
+        waitForNum2 = true;
     } 
     else if (value === "-") {
         operator = "-";
